@@ -13,7 +13,7 @@ using System.Windows.Forms;
  *  - Interfaces | Found In "Management" Folder, W/ It Being Incpproated Into "CarnivalClass".
  *  
  *  @author Nathaniel A. Rivera
- *  @modified 6/8/2024
+ *  @modified 6/10/2024
  */
 namespace CS162_Final_CarnivalManagement
 {
