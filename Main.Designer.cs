@@ -28,28 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.carnivalManagementButton = new System.Windows.Forms.Button();
+            this.visitorDemoButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // button1
+            // carnivalManagementButton
             // 
-            this.button1.Location = new System.Drawing.Point(62, 133);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(151, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Carnival Management";
-            this.button1.UseVisualStyleBackColor = true;
+            this.carnivalManagementButton.Location = new System.Drawing.Point(62, 133);
+            this.carnivalManagementButton.Name = "carnivalManagementButton";
+            this.carnivalManagementButton.Size = new System.Drawing.Size(151, 23);
+            this.carnivalManagementButton.TabIndex = 0;
+            this.carnivalManagementButton.Text = "Carnival Management";
+            this.carnivalManagementButton.UseVisualStyleBackColor = true;
+            this.carnivalManagementButton.Click += new System.EventHandler(this.carnivalManagementButton_Click);
             // 
-            // button2
+            // visitorDemoButton
             // 
-            this.button2.Location = new System.Drawing.Point(229, 132);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(124, 23);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Visitor Demo";
-            this.button2.UseVisualStyleBackColor = true;
+            this.visitorDemoButton.Location = new System.Drawing.Point(229, 132);
+            this.visitorDemoButton.Name = "visitorDemoButton";
+            this.visitorDemoButton.Size = new System.Drawing.Size(124, 23);
+            this.visitorDemoButton.TabIndex = 1;
+            this.visitorDemoButton.Text = "Visitor Demo";
+            this.visitorDemoButton.UseVisualStyleBackColor = true;
+            this.visitorDemoButton.Click += new System.EventHandler(this.visitorDemoButton_Click);
             // 
             // label1
             // 
@@ -67,8 +69,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(401, 178);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.visitorDemoButton);
+            this.Controls.Add(this.carnivalManagementButton);
             this.Name = "Main";
             this.Text = "Main";
             this.ResumeLayout(false);
@@ -77,8 +79,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button carnivalManagementButton;
+        private System.Windows.Forms.Button visitorDemoButton;
         private System.Windows.Forms.Label label1;
     }
 }

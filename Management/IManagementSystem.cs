@@ -5,10 +5,7 @@ namespace CS162_Final_CarnivalManagement.Management
 {
     public interface IManagementSystem
     {
-        Dictionary<string, RideClass> Rides { get; set; }
-        Dictionary<string, BoothClass> Booths { get; set; }
-
-        int TicketCost {get; set;}
+        decimal TicketCost {get; set;}
         int totalSoldTickets { get; }
 
         void saleTickets(int numberToSell); //Intended to update the total sold tickets.

@@ -24,5 +24,18 @@ namespace CS162_Final_CarnivalManagement
             InitializeComponent();
         }
 
+        CarnivalClass carnivalOS = new CarnivalClass(1.5m);
+
+        private void carnivalManagementButton_Click(object sender, System.EventArgs e)
+        {
+            Form carnvialManagement = new CarnivalManagementForm(carnivalOS);
+            carnvialManagement.Show();
+        }
+
+        private void visitorDemoButton_Click(object sender, System.EventArgs e)
+        {
+            Form visitorDemo = new VisitorDemoForm(carnivalOS);
+            visitorDemo.Show();
+        }
     }
 }

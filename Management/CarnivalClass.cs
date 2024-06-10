@@ -6,15 +6,23 @@ namespace CS162_Final_CarnivalManagement.Management
 {
     public class CarnivalClass : IManagementSystem
     {
-        public Dictionary<string, RideClass> Rides { get; set; }
-        public Dictionary<string, BoothClass> Booths { get; set; }
+        public Dictionary<string, RideClass> Rides = new Dictionary<string, RideClass>();
+        public Dictionary<string, BoothClass> Booths = new Dictionary<string, BoothClass>();
+        public Dictionary<int, VisitorClass> Vistors = new Dictionary<int, VisitorClass>();
 
-        public int TicketCost { get; set; }
+        public decimal TicketCost { get; set; }
         public int totalSoldTickets { get; set; }
 
         public CarnivalClass()
         {
             totalSoldTickets = 0;
+            TicketCost = 1m;
+        }
+
+        public CarnivalClass(decimal ticketCost)
+        {
+            totalSoldTickets = 0;
+            TicketCost = ticketCost;
         }
 
         public void saleTickets(int numberToSell)

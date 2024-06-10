@@ -4,7 +4,7 @@ namespace CS162_Final_CarnivalManagement.Experiences
 {
     public class RideClass: ExperienceClass
     {
-        public double HightRequirement { get; set; }
+        public string HightRequirement { get; set; }
 
         //Overriding our display method, to more accurately describe ticket prices.
         public override void displayTicketPrice()
